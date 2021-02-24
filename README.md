@@ -1,6 +1,6 @@
-[![npm version](https://badge.fury.io/js/watcheosio.svg)](https://badge.fury.io/js/watcheosio)
+[![npm version](https://badge.fury.io/js/watcharisen.svg)](https://badge.fury.io/js/watcharisen)
 
-# Watcher for EOSIO blockchains
+# Watcher for ARISEN blockchains
 
 This watcher is meant to be extremely lightweight and fast.
 It has no dependencies and is a total of around 10kb.
@@ -11,13 +11,13 @@ It is best used on either the same machine as the running node, or within the lo
 
 ## Installation
 
-`npm i -S watcheosio`
+`npm i -S watcharisen`
 
 
 ## Usage
 
 ```js
-const NodeWatcher = require('watcheosio');
+const NodeWatcher = require('watcharisen');
 
 // Just a method to log out incoming action data.
 const log = data => console.log('data', data);
@@ -27,13 +27,13 @@ const parsers = {
     '*::transfer':log,
 
     // Using a wildcard for action
-    'eosio.token::*':log,
+    'arisen.token::*':log,
 
     // Using a global catch-all wildcard
     '*':log,
 
     // Catching only specific actions on specific contracts
-    'eosio.token::transfer':log,
+    'arisen.token::transfer':log,
 }
 
 const options = {
