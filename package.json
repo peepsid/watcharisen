@@ -1,7 +1,7 @@
 {
-  "name": "watcheosio",
-  "version": "1.0.4",
-  "description": "A simple watcher for EOSIO blockchains.",
+  "name": "watcharisen",
+  "version": "1.0.0",
+  "description": "A simple watcher for ARISEN blockchains.",
   "main": "index.js",
   "scripts": {
     "start": "node example.js"
